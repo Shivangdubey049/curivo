@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Website</title>
+    <link rel="stylesheet" href="stories.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="logo.png" alt="Mental Health Logo" class="logo-img">
+        <nav class="navbar">
+            <a href="index.html" style="--i:1;" class="active1">Home</a>
+            <a href="about.html" style="--i:2;">About</a>
+            <a href="Test.html" style="--i:3;">Test</a>
+            <a href="resource.html" style="--i:4;">Resources</a>
+            <a href="Consult.html" style="--i:4;">Consult</a>
+            <a href="https://discord.gg/nqmRTAxu" style="--i:5;">Community</a>
+            <a href="https://indianhelpline.com" style="--i:6;">Helpline</a>
+            <a href="signup.html" style="--i:6;">Login</a>
+
+    
+        </nav>
+    </header>
+    
+
+    <div class="content">
+        <div class="heading">
+            <h1>What is PTSD?</h1>
+        </div>
+        <div class="paragraph">
+            <p>Post traumatic stress disorder (PTSD) is a psychiatric disorder that may occur in people who have experienced or witnessed a traumatic event, series of events or set of circumstances. An individual may experience this as emotionally or physically harmful or life-threatening and may affect mental, physical, social, and/or spiritual well-being. Examples include natural disasters, serious accidents, terrorist acts, war/combat, rape/sexual assault, historical trauma, intimate partner violence and bullying.</p>
+        </div>
+        
+        <div class="slider">
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <div class="slide">
+                    <img src="ptsd1.png" alt="Slide 1">
+                    <p>In the quiet hours of the night, Sarah's mind became a battleground, haunted by memories of a past she couldn't escape. The sound of gunfire echoed in her dreams, and the scent of smoke lingered in the air long after waking. Each day felt like a struggle to navigate through the minefield of her thoughts, as the shadows of the past cast a dark cloud over her present.</p>
+                </div>
+                <div class="slide">
+                    <img src="ptsd2.png" alt="Slide 2">
+                    <p>Sarah found herself retreating into the safety of solitude, seeking refuge in the silence that enveloped her. Yet, even in the quietest moments, the echoes of her trauma reverberated loudly within her mind. She yearned for a respite from the relentless onslaught of memories, a sanctuary where she could find solace amidst the chaos that consumed her thoughts.</p>
+                </div>
+                <div class="slide">
+                    <img src="ptsd3.png" alt="Slide 3">
+                    <p>Faced with the overwhelming weight of her past, Sarah knew she couldn't continue to bear the burden alone. With trembling hands and a heart heavy with apprehension, she reached out for help. It was a daunting step into the unknown, but she knew that she couldn't journey through the darkness of PTSD without the guiding light of support and understanding.</p>
+                </div>
+                <div class="slide">
+                    <img src="ptsd4.jpg" alt="Slide 4">
+                    <p>As Sarah shared her story with a therapist, she discovered the transformative power of vulnerability. Opening up about her experiences allowed her to release the pent-up emotions that had long been festering within her. In the safety of the therapist's office, she found the courage to confront her deepest fears and insecurities, laying the groundwork for healing to begin.</p>
+                </div>
+                <div class="slide">
+                    <img src="ptsd5.png" alt="Slide 5">
+                    <p>With each therapy session, Sarah embarked on a journey of self-discovery and healing. She learned to navigate the labyrinth of her emotions with grace and compassion, embracing the highs and lows as part of her journey towards wholeness. Though the road ahead was fraught with challenges, she faced each obstacle with unwavering determination, knowing that the path to healing was paved with courage and resilience.</p>
+                </div>
+                <div class="slide">
+                    <img src="ptsd6.png" alt="Slide 6">
+                    <p>As Sarah emerged from the shadows of her past, she stepped into the light of hope that had long eluded her. Though the scars of her trauma would always remain, she no longer allowed them to define her. With a newfound sense of purpose and a heart filled with gratitude, she embarked on a new chapter of her life, empowered by the strength she had discovered within herself.
+
+
+
+
+
+                    </p>
+                </div>
+                <!-- Add more slides as needed -->
+            </div>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <!-- Add more dots as needed -->
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content goes here -->
+    </footer>
+
+    <script src="stories.js"></script>
+</body>
+</html>

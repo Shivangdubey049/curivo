@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+  }
+  body {
+    color: #ffffff;
+    background: #ffffff;
+  }
+  
+   
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1D5D9B;
+  color: white;
+  padding: 5px 10%;
+  transition: padding 0.3 ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+.logo {
+
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  left: 30px;
+  top: 5px;
+
+}
+
+.logo-img {
+  width: 20%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar {
+  display:flex;
+  flex-wrap: wrap; 
+  padding-left: 20%;
+  /* height: 60px; */
+
+  
+}
+
+.navbar a {
+  font-size: 24px; /* Adjust font size for smaller screens */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px 15px; /* Adjust margin for smaller screens */
+  transition: 0.3s;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+
+
+  .custom-button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-image {
+    width: 30px; /* Adjust image width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px;
+}
+
+.button-content {
+    flex: 1;
+}
+
+.button-content h2 {
+    margin: 0;
+    font-size: 16px; /* Adjust heading font size */
+    color: #333;
+}
+
+.button-content p {
+    margin: 5px 0 0; /* Adjust paragraph margin */
+    font-size: 14px; /* Adjust paragraph font size */
+    color: #666;
+}
+.card {
+  transition: transform 0.5s ease;
+  margin-bottom: 20px; /* Add margin between cards */
+  
+}
+
+.card:hover {
+  transform: scale(1.2);
+  
+}
+
+
+.button {
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #065F46;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* Add styles for specific button colors */
+.bg-emerald-100 {
+  background-color: #3e986a; /* Light green */
+}
+
+.bg-emerald-700 {
+  background-color: #065F46; /* Dark green */
+}
+
+.text-emerald-900 {
+  color: #ffffff; /* Dark green text */
+}
+
+.text-white {
+  color: #FFFFFF; /* White text */
+}
+
+.book-now-btn {
+  background-color: #065F46; /* Dark green */
+  border-color: #10B981; /* Green */
+  color: #FFFFFF; /* White */
+  font-weight: 900;
+  transition: transform 0.3s ease;
+}
+
+.book-now-btn:hover {
+  transform: translateY(1px);
+  background-color: #10B981; /* Green */
+  border-color: #065F46; /* Dark green */
+}
+.cancel-btn {
+  background-color: #065F46; /* Dark green */
+  border-color: #10B981; /* Green */
+  color: #FFFFFF; /* White */
+  transition: transform 0.3s ease;
+  font-weight: 700; /* Bolder font */
+  align-items: right; /* Shift text to the right */
+  margin-left: 80px;
+}
+
+.cancel-btn:hover {
+  transform: translateY(1px);
+  background-color: #10B981; /* Green */
+  border-color: #065F46; /* Dark green */
+}
+
+.buttons{
+  align-items: center
+}
+.background{
+  background-color:#e2ffff;
+}
