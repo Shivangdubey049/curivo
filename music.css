@@ -1,0 +1,147 @@
+
+   @import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&disply=swap');
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000000;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgb(21, 13, 107) 1.1%, rgb(188, 16, 80) 130.5%);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed while scrolling */
+}
+
+  
+.header {
+  color: rgb(0, 0, 0);
+  padding: 10px 5%;
+  padding: 5px 10%;
+  transition: padding 0.3 ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  left: 30px;
+  top: 5px;
+
+}
+
+.logo-img {
+  width: 20%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+  padding-left: 20%;
+}
+
+.navbar a {
+  font-size: 24px; /* Adjust font size for smaller screens */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px 15px; /* Adjust margin for smaller screens */
+  transition: 0.3s;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+ 
+  
+  /* .navbar a.active,
+  .navbar a:hover {
+    color: #ffc107;
+  } */
+  
+  .Music {
+    /* padding: 20px; */
+    /* justify-content: center; */
+    margin-top: 5%;
+    text-align: center;
+    font-family: 'Josefin Sans',sans-serif;
+    color: rgb(255, 254, 253);
+    font-size: 100px;
+    padding-top: 50px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    backdrop-filter: blur(5px);
+  }
+  
+  .card {
+    
+    width: 80%;
+    height: 420px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 10px; 
+    
+    /* backdrop-filter: blur(5px); */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .card .text {
+    padding: 50px;
+    font-family: sans-serif;
+  }
+  
+  .card h3 {
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .card p {
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .spotify {
+    padding: 10px;
+    width: 720px;
+    height: 380px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  

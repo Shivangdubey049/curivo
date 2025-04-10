@@ -1,0 +1,161 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ font-family: Arial, sans-serif;
+ background: radial-gradient(690px at 51.5% -14.8%, rgb(94, 252, 236) 0%, rgb(0, 40, 143) 90%);
+ background-size: cover;
+ background-position: center;
+
+
+
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* background-color: #1D5D9B; */
+  color:black;
+  padding: 5px 10%;
+  transition: padding 0.3 ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+
+.logo {
+
+  align-items: center;
+  text-decoration: none;
+  position: fixed;
+  left: 30px;
+  top: 5px;
+
+}
+
+.logo-img {
+  width: 20%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.navbar {
+  display:flex;
+  flex-wrap: wrap; 
+  padding-left: 20%;
+  /* height: 60px; */
+
+  
+}
+
+.navbar a {
+  font-size: 24px; /* Adjust font size for smaller screens */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-weight: 500;
+  margin: 5px 15px; /* Adjust margin for smaller screens */
+  transition: 0.3s;
+  position: relative;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.navbar a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(1);
+}
+.container {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally center the content */
+  }
+  
+.head {
+   
+    padding: 6%;
+    text-align: center; /* Center content horizontally */
+  }
+  
+.head h1{
+    /* margin-bottom: 10px; Spacing below headings */
+    font-family: 'Josefin Sans',sans-serif;
+    color: wheat;
+    font-size: 80px;
+  }
+  
+  .head h2 {
+    margin-bottom: 25px; /* Spacing below headings */
+    font-family: 'Josefin Sans',sans-serif;
+    color: wheat;
+    font-size: 30px;   
+  }
+  
+  .notepad-container {
+    padding-top: 5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    
+    align-items: center;
+    margin: -10%;
+    margin-left: 50px; /* Add margin for spacing */
+    margin-right: 50px;
+    width: 90%; /* Adjust width as desired */
+  }
+  
+  #notepad {
+    width: 100%; /* Fill the container width */
+    height: 440px; /* Adjust height as desired */
+    padding: 10px;
+    border: 1px solid #ffffff; /* Add a thin border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 25px; /* Adjust font size as desired */
+    resize: none; /* Prevent resizing the textarea */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #notepad:focus {
+    outline: none; /* Remove outline on focus */
+    border-color: #871717; /* Change border color on focus */
+  }
+  
+  #clear-button {
+    font-size: 30px;
+    font-family: 'Josefin Sans',sans-serif;
+    align-items: center;
+    margin-left: 38%;
+    /* margin-right: 80px; */
+    background-color: wheat; /* Light gray background */
+    border: 2px solid #ddd; /* Add a thin border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px 40px; /* Padding for button */
+    margin-top: 20px; /* Spacing above button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+  }
+  
+  #clear-button:hover {
+    background-color: #ddd; /* Slightly darker background on hover */
+  }
+  
