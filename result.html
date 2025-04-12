@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depression Test Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Depression Test Result</h1>
+    <div class="container1" id="result-container">
+        <h2 class="depression" id="result-text"></h2>
+        <img src="therapist.jpg" alt="Description of the image">
+        <p id="subresult"></p>
+        <div class="buttons">
+                <a href="Consult.html" class="button">Consult</a>
+        </div>
+        
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const result = params.get('result');
+        const subresult = params.get('subresult');
+        if (result) {
+            document.getElementById('result-text').innerText = `Your result: ${result}`;
+        }
+        if (subresult) {
+            document.getElementById('subresult').innerText = `${subresult}`;
+        }
+    </script>
+</body>
+</html>
